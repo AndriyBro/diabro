@@ -1,0 +1,25 @@
+body{
+    background-color: #eff179
+}
+
+
+header{
+    height: 100px;
+    background-color: red;
+    background-color: #a2a25b;
+}
+
+.block img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+.block{
+    text-align:center;
+    margin: 10px;
+}
+.section{
+    display: flex;
+    justify-content: center;
+}
