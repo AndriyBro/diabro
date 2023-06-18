@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>діа</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    .hidden-text {
+      display: none;
+    }
+  </style>
+  <script>
+    function toggleHiddenText(index) {
+      var hiddenText = document.getElementById("hiddenText" + index);
+      var displayValue = window.getComputedStyle(hiddenText).getPropertyValue("display");
+      
+      if (displayValue === "none") {
+        hiddenText.style.display = "block";
+      } else {
+        hiddenText.style.display = "none";
+      }
+    }
+  </script>
+</head>
+<body>
+
+
+    <header>
+
+    </header>
+    <main>
+        <section class="section">
+            
+        
+       <article class="block">
+    <img src="https://www.belta.by/images/storage/news/with_archive/2022/000467_1646837834_489198_big.jpg"><br>
+  <a href="#" onclick="toggleHiddenText(1); return false;">Апельсин</a>
+  <p id="hiddenText1" class="hidden-text">100гр - 1ХО</p>
+  </article>
+
+    <article class="block">
+    <img src="https://img.playbuzz.com/image/upload/c_crop,h_532,w_709,x_0,y_0/v1484144199/og3wlwag2hflnatmiok0.jpg"><br>
+  <a href="#" onclick="toggleHiddenText(2); return false;">Ківі</a>
+  <p id="hiddenText2" class="hidden-text">100гр - 1ХО</p>
+  </article>
+
+
+  <!-- Додайте подібний HTML-код для інших прихованих текстів -->
+  <article class="block">
+    <img src="https://fitness.org.ua/wp-content/uploads/2020/04/9f7453033efe69d4e6bbb0e5461430c2.jpg"><br>
+  <a href="#" onclick="toggleHiddenText(10); return false;">Банан</a>
+  <p id="hiddenText10" class="hidden-text">100гр - 1ХО</p>
+  </article>
+  
+       
+
+        </section>
+           
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>
